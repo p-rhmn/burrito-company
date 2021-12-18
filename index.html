@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lieferando</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="left-plus-logo">
+
+        <span>Burrito Store</span>
+      </div>
+      <div>
+
+      </div>
+      <div class="nav-plus-lang">
+        <img src="img/burger.png" alt="burger-menu" />
+      </div>
+    </div>
+  </header>
+  <main class="grid-layout">
+    <section class="section1-container">
+      <div class="section1-header-img">
+        <img class="section1-logo" src="img/burrito.png" />
+
+        <h2 class="company-title">Burrito Company</h2>
+        <div class="overlay"></div>
+      </div>
+      <div class="section1-header-info">
+        <div class="restaurant-title">
+          <h1>Croccante Restaurant</h1>
+          <div class="section1-rating">
+            <img src="img/rating-stars.png" alt="" />
+            <span>(832 Bewertungen)</span>
+          </div>
+        </div>
+        <div class="section1-header-side">
+          <img class="header-info" src="img/info.png" />
+          <img class="header-heart" src="img/herz.png" />
+        </div>
+      </div>
+      <div class="section1-slider">
+        <div class="section1-slider-links">
+          <img src="img/lupe.png" />
+          <a href="#"><span>Beliebte Gerichte</span></a>
+          <a href="#">Salate</a>
+          <a href="#">Pizza</a>
+          <a href="#">Pizzabrot</a>
+          <a href="#">Pasta</a>
+          <a href="#">Al Forno</a>
+          <a href="#">Aufläufe</a>
+          <div><img class="slider-btn" src="img/dark.png" /></div>
+        </div>
+      </div>
+      <div id="menu-card-container" class="menu-card-container"></div>
+      <button id="open-basket" class="open-basket" onclick="openBasket()">Warenkorb</button>
+    </section>
+    <aside id="side-basket" class="side-basket">
+      <h3 class="basket-header">Warenkorb</h3>
+      <img id="close-icon" class="close-icon" onclick="closeBasket()" src="img/close.png">
+      <div id="basket" class="basket basket-empty"></div>
+      <div class="basket-sum">
+        <div class="basket-sum-board">
+          <p>Zwischensumme</p>
+          <p id="sum"></p>
+        </div>
+        <div class="basket-sum-board">
+          <p>Lieferkosten</p>
+          <p>4.50€</p>
+        </div>
+        <div class="basket-sum-board">
+          <p>Discount</p><br>
+          <div>
+            <input id="discount" type="text" maxlength="5">
+            <button id="discount-btn" class="discount-btn" disabled>Check</button>
+          </div>
+
+        </div>
+        <div class="basket-sum-board">
+          <p>ersparniss</p>
+          <p id="ersparniss"></p>
+        </div>
+        <div id="hint" class="basket-sum-board"></div>
+        <div class="basket-sum-board end-sum">
+          <p><b>Gesamt</b></p>
+          <p><b id="final-sum"></b></p>
+        </div>
+        <button id="basket-submit-btn" class="basket-submit-btn" disabled>
+          Bestellen
+        </button>
+      </div>
+    </aside>
+  </main>
+
+
+  <script src="js/basket.js"></script>
+
+  <script src="js/product.model.js"></script>
+  <script src="js/product-list.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html
